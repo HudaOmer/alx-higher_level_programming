@@ -1,5 +1,5 @@
-#Project 0x00-python-hello_world
+# Project 0x00-python-hello_world
 
 solutions by Huda Omer
 
-##14 tasks
+## 14 tasks

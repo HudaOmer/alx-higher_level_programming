@@ -1,9 +1,9 @@
-#ALx python repository
+# ALx python repository
 Solutions of the projects
-Huda Omer
+ - Huda Omer
 
 
-##Author’s disclaimer
+## Author’s disclaimer
 Welcome to the Python world!
 
 The first projects are more "C-oriented" - no tricks, no funky syntax - simple!
@@ -15,7 +15,7 @@ Enjoy!
 
 - Guillaume
 
-##Zen
+## Zen
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
