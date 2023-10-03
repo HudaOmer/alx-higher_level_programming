@@ -3,7 +3,8 @@ def remove_char_at(str, n):
     i = 0
     for ch in str:
         if ch == str[n]:
-            i++
+            i += 1
             continue
-        new[i++] = ch
+        new[i] = ch
+        i += 1
     return new
