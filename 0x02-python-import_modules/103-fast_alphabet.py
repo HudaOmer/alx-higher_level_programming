@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import 103-fast
+import 103_fast
