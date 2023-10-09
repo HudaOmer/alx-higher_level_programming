@@ -18,7 +18,7 @@ int is_palindrome(listint_t **head)
 
 	p = malloc(sizeof(int) + (t + 1));
 	if (!p)
-		return (0);
+		return (1);
 	list = *head;
 	while (t)
 	{
@@ -29,7 +29,11 @@ int is_palindrome(listint_t **head)
 	for (i = 0; i < count / 2; i++)
 	{
 		if (p[i] != p[count - i - 1])
+		{
+			free(p);
 			return (0);
+		}
 	}
+	free(p);
 	return (1);
 }
