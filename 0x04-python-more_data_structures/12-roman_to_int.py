@@ -6,5 +6,5 @@ def roman_to_int(roman_string):
     return 0
   for roman in reversed(roman_string):
     i = roman_string[roman]
-    sum += i if sum < i * 5 else sum -= i
+    sum += i if sum < i * 5 else -i
   return sum
