@@ -5,7 +5,7 @@
 class Square:
     """A Class that REPRESENTS a Square"""
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """Initialize a Square instance with
         a size that has a positive int value
         Args:
@@ -20,6 +20,7 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+        self.__position = position
 
     @property
     def size(self):
