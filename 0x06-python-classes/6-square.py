@@ -71,14 +71,22 @@ class Square:
 
         return self.__size ** 2
 
-    def my_print(self):
-        """A Method that prints a square with #"""
+    def pos_print(self):
+        """A Method that returns the position in
+        spaces"""
+        pos = ""
+        if self.size == 0:
+            return "\n"
+        for w in range(self.position[1]):
+            pos += "\n"
+        for w in range(self.size):
+            for i in range(self.position[0]):
+                pos += " "
+            for j in range(self.size):
+                pos += "#"
+            pos += "\n"
+        return pos
 
-        if self.__size == 0:
-            print("")
-            return
-        [print("") for i in range(0, self.__position[1])]
-        for i in range(0, self.__size):
-            [print(" ", end="") for j in range(0, self.__position[0])]
-            [print("#", end="") for k in range(0, self.__size)]
-            print("")
+    def my_print(self):
+        """A Method to print the square in position"""
+        print(self.pos_print(), end='')
