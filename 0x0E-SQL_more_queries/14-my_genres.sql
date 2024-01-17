@@ -7,4 +7,4 @@ SELECT g.`name`
        INNER JOIN `tv_shows` AS t
        ON t.`id` = s.`show_id`
        WHERE t.`title` = "Dexter"
- ORDER BY g.`name
+ ORDER BY g.name;
