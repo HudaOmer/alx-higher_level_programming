@@ -1,2 +1,4 @@
 #!/usr/bin/node
-console.log(`${process.argv[2]} is ${process.argv[3]}`);
+for (const sentence of ['C is fun', 'Python is cool', 'JavaScript is amazing']) {
+  console.log(sentence);
+}
