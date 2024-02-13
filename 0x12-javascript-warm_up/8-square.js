@@ -8,3 +8,4 @@ if (isNaN(num)) {
     for (let c = 0; c < num; c++) row += 'X';
     console.log(row);
   }
+}
