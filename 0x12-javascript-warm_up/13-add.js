@@ -1,2 +1,2 @@
 #!/usr/bin/node
-console.log(`${process.argv[2]} is ${process.argv[3]}`);
+exports.add = (a, b) => a + b;
