@@ -1,2 +1,8 @@
 #!/usr/bin/node
-console.log(`${process.argv[2]} is ${process.argv[3]}`);
+if (process.argv.length <= 3) {
+  console.log('0');
+} else {
+  const array = process.argv.slice(2).map(Number);
+  const second = array.sort((a, b) => b - a)[1];
+  console.log(second);
+}
