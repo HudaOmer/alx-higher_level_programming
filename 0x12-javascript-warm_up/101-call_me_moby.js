@@ -1,2 +1,4 @@
 #!/usr/bin/node
-console.log(`${process.argv[2]} is ${process.argv[3]}`);
+exports.callMeMoby = function (count, someFunction) {
+  for (let i = 0; i < count; i++) someFunction();
+};
