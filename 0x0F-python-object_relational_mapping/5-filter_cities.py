@@ -17,7 +17,6 @@ if __name__ == "__main__":
             WHERE states.name=%s
             ORDER BY cities.id ASC""", (sys.argv[4],))
     query = cursor.fetchall()
-    for row in query:
-        print(row)
+    print(", ".join(city[1] for city in query))
     cursor.close()
     connect.close()
