@@ -13,8 +13,7 @@ if __name__ == "__main__":
             charset="utf8"
         )
     cursor = connect.cursor()
-    cursor.execute("""SELECT * FROM states
-            WHERE name LIKE BINARY 'N%' ORDER BY id ASC""")
+    cursor.execute("SELECT * FROM states WHERE name LIKE %s", (sys.argv[4],))
     query = cursor.fetchall()
     for row in query:
         print(row)
