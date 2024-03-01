@@ -3,7 +3,7 @@
 from urllib.request import urlopen
 
 if __name__ == "__main__":
-    """ a Python script that fetches 
+    """ a Python script that fetches
     https://alx-intranet.hbtn.io/status """
 
     URL = "https://alx-intranet.hbtn.io/status"
