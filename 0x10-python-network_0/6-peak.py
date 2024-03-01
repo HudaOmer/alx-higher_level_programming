@@ -4,10 +4,10 @@
 """
 
 
-def find_peak(numbr):
+def find_peak(numbers):
     '''
         Finds the peak in a   list of numbers
     '''
-   if list_of_integers:
-      list_of_integers.sort(reverse=True)
-   return list_of_integers[0]
+   if numbers:
+      numbers.sort(reverse=True)
+   return numbers[0]
