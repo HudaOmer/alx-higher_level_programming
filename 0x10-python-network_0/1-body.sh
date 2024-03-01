@@ -1,3 +1,3 @@
 #!/bin/bash
-# c
-curl -sI "$1"
+# displays the body of the response
+curl -s "$1"
