@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-"""
-   this function finds a peak in a list of unsorted  integers
-"""
+"""Algorithms for list of integers."""
 
 
-def find_peak(numbers):
-    '''
-        Finds the peak in a   list of numbers
-    '''
-   if numbers:
-      numbers.sort(reverse=True)
-   return numbers[0]
+def find_peak(list_of_integers):
+    """Finds a peak in a list of unsorted integers."""
+    if list_of_integers:
+        list_of_integers.sort(reverse=True)
+        return list_of_integers[0]
