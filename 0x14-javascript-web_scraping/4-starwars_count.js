@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
 const request = require('request');
-const URL = process.argv[2]
+const url = process.argv[2]
 
-request(URL, function (error, response, body) {
+request(url, function (error, response, body) {
   if (!error) {
     const results = JSON.parse(body).results;
     console.log(results.reduce((count, movie) => {
